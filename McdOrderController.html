@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Order Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>McDonald's Order Controller</h1>
+        </div>
+        <div class="controls">
+            <div id="instruction" class="instruction">
+                <h3>Please choose your identity:</h3>
+            </div>
+
+            <div id="buttons" class="button-row">
+                <button onclick="setIdentity('normal')">Normal Customer</button>
+                <button onclick="setIdentity('vip')">VIP Customer</button>
+                <button onclick="setIdentity('manager')">Manager</button>
+            </div>
+            <div id="backButtons" class="button-row"></div>
+        </div>
+    </div>
+
+    <div class="order-columns">
+        <div class="column">
+            <h2>Pending</h2>
+            <ul id="pendingOrders"></ul>
+        </div>
+        <div class="column">
+            <h2>In-Progress</h2>
+            <ul id="botNumbers"></ul>
+        </div>
+        <div class="column">
+            <h2>Completed</h2>
+            <ul id="completedOrders"></ul>
+        </div>
+    </div>
+    <!-- Include all script files -->
+    <script src="IdentityController.js"></script>
+    <script src="OrderController.js"></script>
+    <script src="BotController.js"></script>
+    <script src="ProcessOrderController.js"></script>
+</body>
+
+</html>
