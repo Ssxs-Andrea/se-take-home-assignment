@@ -1,3 +1,8 @@
+// Order class represents an order with order number, status, and type.
+// Functions addNormalOrder and addVipOrder add new orders to the orders array, 
+// with normal and VIP orders having unique order numbers. 
+// Function updatePendingOrdersUI updates the UI to display the current list of pending orders.
+
 class Order {class
     constructor(orderNumber, status, type) {
         this.orderNumber = orderNumber;

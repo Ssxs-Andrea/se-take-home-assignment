@@ -1,3 +1,10 @@
+// setIdentity function displays different instructions and buttons based on the provided identity.
+// It updates the instructionDiv, buttonsDiv, and backButtonsDiv elements in the UI.
+// The function is called with parameters 'normal', 'vip', or 'manager' to display instructions for different identities.
+
+// goBack function resets the UI to the initial state where the user can choose their identity.
+// It is called when the user clicks the "Back" button to go back to the identity selection screen.
+
 function setIdentity(identity) {
     const instructionDiv = document.getElementById('instruction');
     const buttonsDiv = document.getElementById('buttons');

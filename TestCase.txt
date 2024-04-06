@@ -1,0 +1,29 @@
+Test Case:
+
+1.New Normal Order:
+•Click "New Normal Order" button.
+
+•Verify that a new order is added to the "PENDING" area.
+•Verify that the new order's status is "PENDING".
+
+2.New VIP Order:
+•Click "New VIP Order" button.
+
+•Verify that a new order is added to the "PENDING" area.
+•Verify that the new order is placed in front of all existing "Normal" orders but behind all existing "VIP" orders.
+•Verify that the order number is unique and increasing.
+
+3.+Bot:
+•Click "+ Bot" button.
+
+•Verify that a new bot is created and starts processing the order inside the "PENDING" area.
+•After 10 seconds, verify that the order is moved to the "COMPLETE" area.
+•Verify that the bot starts processing another order if there is any left in the "PENDING" area.
+•If there are no more orders in the "PENDING" area, verify that the bot becomes IDLE until a new order comes in.
+
+4.-Bot:
+•Click "- Bot" button.
+
+•Verify that the newest bot is destroyed.
+•If the bot is processing an order, verify that the order is now back to "PENDING" and ready to process by other bot.
+

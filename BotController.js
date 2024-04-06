@@ -1,3 +1,9 @@
+// Bot class represents a bot with an ID, state, current order, and remaining processing time.
+// Function increaseBot adds a new bot to the bots array with an incremented ID and updates the UI.
+// Function decreaseBot removes the last bot from the bots array if there are bots available, 
+// stopping the processing of its current order if applicable, and updates the UI.
+// Function updatePendingBotsUI updates the UI to display the current list of bots and their status.
+
 class Bot {
     constructor(id, state) {
         this.id = id;

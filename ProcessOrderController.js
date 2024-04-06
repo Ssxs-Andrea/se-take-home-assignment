@@ -1,3 +1,7 @@
+// Process orders with idle bots.
+// This function checks for idle bots and assigns orders to them for processing.
+// If an order is completed, it updates the UI and moves the order to the completed orders list.
+
 let completedOrder = [];
 
 function processingOrder() {
